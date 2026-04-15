@@ -209,5 +209,3 @@ marimo/_lsp/
 __marimo__/
 docker/fastapi-qgis/output/basin
 docker/fastapi-qgis/data/basin
-
-modules
