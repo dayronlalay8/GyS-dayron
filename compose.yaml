@@ -1,0 +1,20 @@
+services:
+  api:
+    build:
+      context: ./docker/fastapi-qgis
+      dockerfile: Dockerfile
+    container_name: fastapi-qgis
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "${FASTAPI_PORT}:8001"
+    volumes:
+      - ./docker/fastapi-qgis:/app
+    command: ["fastapi", "dev", "app.py", "--host", "0.0.0.0", "--port", "8001"]
+    networks:
+      - fastapi-qgis-network
+
+networks:
+  fastapi-qgis-network:
+    driver: bridge
