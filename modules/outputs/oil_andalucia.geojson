@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "oil_andalucia",
+"features": [
+{ "type": "Feature", "properties": { "id_dera": 11011200000048, "codigo": 2, "nombre": "Monoboya refinería de Algeciras" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 283808.648007309995592, 4004967.933642200194299 ] ] } },
+{ "type": "Feature", "properties": { "id_dera": 11011200000047, "codigo": 1, "nombre": "Monoboya refinería de La Rábida" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 154351.047065260005184, 4108831.825849180109799 ] ] } }
+]
+}
